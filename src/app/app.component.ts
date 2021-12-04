@@ -7,12 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'feed-my-animals';
-
-  goToBarn() {
-    console.log('barn');
-  }
-
-  goToHouse() {
-    console.log('house');
-  }
 }
