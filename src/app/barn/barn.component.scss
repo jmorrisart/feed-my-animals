@@ -1,0 +1,41 @@
+@import '../variables.scss';
+
+.title {
+  font-size: 3em;
+  color: $green;
+  font-family: $abril-fatface;
+  text-align: center;
+}
+
+.emergency-contacts-container {
+  background-color: $red;
+  width: 100%;
+  padding: 0.5em;
+  bottom: 0;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: 12.5%;
+
+    li {
+      text-align: center;
+      width: 25%;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 850px) {
+  .emergency-contacts-container {
+    padding-left: 0;
+    ul {
+      display: block;
+      margin: 0 !important;
+
+      li {
+        text-align: left;
+      }
+    }
+  }
+}
