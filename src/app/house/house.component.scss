@@ -1,10 +1,26 @@
 @import '../variables.scss';
 
+.finn-container,
+.murphy-container,
+.misc-container {
+  width: 50%;
+  margin-left: 25%;
+  font-family: $khula;
+  font-size: 1.5em;
+}
+
 .title {
-  font-size: 3em;
-  color: $green;
+  font-size: 3.5em;
+  color: $purple;
   font-family: $abril-fatface;
   text-align: center;
+}
+
+.section-title {
+  color: $red;
+  font-family: $lobster;
+  font-size: 1.5em;
+  margin-bottom: 0;
 }
 
 .emergency-contacts-container {
@@ -12,29 +28,54 @@
   width: 100%;
   padding: 0.5em;
   bottom: 0;
+  font-size: 1.5em;
+
+  .eci-title {
+    color: white;
+    font-family: $abril-fatface;
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+  }
 
   ul {
     list-style-type: none;
     display: flex;
-    margin-left: 12.5%;
 
     li {
       text-align: center;
-      width: 25%;
+      width: 50%;
+
+      span {
+        font-weight: 700;
+      }
     }
   }
 }
 
 
+
 @media only screen and (max-width: 850px) {
+
+  .finn-container,
+  .murphy-container,
+  .misc-container {
+    width: 90%;
+    margin-left: 5%;
+    font-family: $khula;
+    font-size: 1.5em;
+  }
+
   .emergency-contacts-container {
     padding-left: 0;
     ul {
       display: block;
       margin: 0 !important;
+      padding: 0;
 
       li {
-        text-align: left;
+        text-align: center;
+        width: 100%;
       }
     }
   }

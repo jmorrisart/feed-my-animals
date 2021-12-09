@@ -2,14 +2,16 @@
 
 .instructions-container,
 .equine-container,
-.blanketing-instructions-container {
+.blanketing-instructions-container,
+.blanket-rules-container {
   width: 50%;
   margin-left: 25%;
   font-family: $khula;
+  font-size: 1.5em;
 }
 
 .title {
-  font-size: 3em;
+  font-size: 2em;
   color: $purple;
   font-family: $abril-fatface;
   text-align: center;
@@ -18,20 +20,16 @@
 .section-title {
   color: $red;
   font-family: $lobster;
-  font-size: 2em;
-  margin-bottom: 0;
-}
-
-li {
   font-size: 1.5em;
+  margin-bottom: 0;
 }
 
 .smaller-font {
   font-size: 1em;
 }
 
-.larger-font {
-  font-size: 1.5em;
+.center-align {
+  text-align: center;
 }
 
 .lobster-font {
@@ -39,11 +37,27 @@ li {
   color: $green;
 }
 
+.no-font {
+  font-family: $lobster;
+  color: $red;
+}
+
+.blanket-list-container {
+  ol {
+    list-style-type: none;
+  }
+}
+
+.mobile-break {
+  display: none;
+}
+
 .emergency-contacts-container {
   background-color: $red;
   width: 100%;
   padding: 0.5em;
   bottom: 0;
+  font-size: 1.5em;
 
   .eci-title {
     color: white;
@@ -70,14 +84,31 @@ li {
 
 
 @media only screen and (max-width: 850px) {
+
+  .instructions-container,
+  .equine-container,
+  .blanketing-instructions-container,
+  .blanket-rules-container {
+    width: 90%;
+    margin-left: 5%;
+    font-family: $khula;
+    font-size: 1.5em;
+  }
+
+  .mobile-break {
+    display: block;
+  }
+
   .emergency-contacts-container {
     padding-left: 0;
     ul {
       display: block;
       margin: 0 !important;
+      padding: 0;
 
       li {
-        text-align: left;
+        text-align: center;
+        width: 100%;
       }
     }
   }
