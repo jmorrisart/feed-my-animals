@@ -42,6 +42,12 @@
   color: $red;
 }
 
+.feed-gifs {
+  border-radius: 2em;
+  border: 0.25em solid $green;
+  margin-bottom: 1em;
+}
+
 .blanket-list-container {
   ol {
     list-style-type: none;
