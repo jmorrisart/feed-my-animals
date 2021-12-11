@@ -2,7 +2,8 @@
 
 .finn-container,
 .murphy-container,
-.misc-container {
+.misc-container,
+.gif-container {
   width: 50%;
   margin-left: 25%;
   font-family: $khula;
@@ -21,6 +22,12 @@
   font-family: $lobster;
   font-size: 1.5em;
   margin-bottom: 0;
+}
+
+.feed-gifs {
+  border-radius: 2em;
+  border: 0.25em solid $green;
+  margin-bottom: 1em;
 }
 
 .emergency-contacts-container {
@@ -59,7 +66,8 @@
 
   .finn-container,
   .murphy-container,
-  .misc-container {
+  .misc-container,
+  .gif-container {
     width: 90%;
     margin-left: 5%;
     font-family: $khula;
